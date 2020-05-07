@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh echo "hello-world"
+                sh 'echo "hello-world"'
+                sh 'docker run hello-world'
             }
         }
     }
