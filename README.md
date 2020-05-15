@@ -47,4 +47,7 @@ docker container run --name jenkins-tutorial --rm --detach \
 - add Jenkinsfile to project repo
 - consider adding github API token to stored credentials
 
+# Using Docker with Pipelin
+
+- [tutorial](https://www.jenkins.io/doc/book/pipeline/docker/)
 
