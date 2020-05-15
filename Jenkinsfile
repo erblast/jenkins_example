@@ -5,7 +5,14 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo "hello-world"'
-                sh 'docker run hello-world'
+            }
+        }
+    }
+   agent { dockerfile true }
+    stages {
+        stage('dockerfile') {
+            steps {
+                sh 'python --version'
             }
         }
     }
